@@ -33,7 +33,7 @@ export function JobsEditButton({
   return (
     <Link href={`/jobs/${id}/edit`}>
       <Button size="sm" className="w-fit rounded-full font-mono text-xs">
-        Edit
+        Editează
       </Button>
     </Link>
   );

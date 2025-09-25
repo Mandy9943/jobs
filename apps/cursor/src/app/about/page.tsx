@@ -1,85 +1,83 @@
 import Image from "next/image";
 
 export const metadata = {
-  title: "About Cursor Directory",
-  description: "Why we built Cursor Directory",
+  title: "Despre Cursor Directory",
+  description: "De ce am construit Cursor Directory",
 };
 
 export default function About() {
   return (
     <div className="flex flex-col items-center justify-center max-w-screen-md mx-auto px-6 py-12">
       <h1 className="text-4xl mb-12 mt-20 text-center">
-        Why We Built <br />
+        De ce am construit <br />
         Cursor Directory
       </h1>
 
       <div className="space-y-12 mt-10">
         <section>
           <p className="text-[#878787] leading-relaxed text-sm">
-            Our journey with Cursor has been transformative. As team of one
-            developer and a designer, we've experienced firsthand how Cursor
-            significantly accelerated our development process. This efficiency
-            boost gave us the bandwidth to build our two startups,{" "}
+            Călătoria noastră cu Cursor a fost transformatoare. Ca o echipă formată dintr-un
+            dezvoltator și un designer, am experimentat din prima mână cum Cursor
+            a accelerat semnificativ procesul nostru de dezvoltare. Acest plus de eficiență
+            ne-a oferit resursele să construim cele două startup-uri ale noastre,{" "}
             <a
               href="https://go.midday.ai/8cX3F4o"
               className="text-primary border-border border-dashed border-b-[1px]"
             >
               Midday
             </a>{" "}
-            and{" "}
+            și {" "}
             <a
               href="https://go.midday.ai/NnI1CUO"
               className="text-primary border-border border-dashed border-b-[1px]"
             >
               Languine
             </a>{" "}
-            with incredible velocity.
+            cu o viteză incredibilă.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl mb-2">Our Approach</h2>
+          <h2 className="text-xl mb-2">Abordarea noastră</h2>
           <p className="text-[#878787] leading-relaxed text-sm">
-            As a bootstrapped company, we believe in sustainable growth and
-            maintaining full control over our product vision. We're building our
-            platforms thoughtfully, prioritizing user needs over rapid scaling.
-            With Midday, we're streamlining business operations, while with
-            Languine, we're building localization infrastructure that helps
-            fast-paced startups reach global audiences without slowing down
-            their development velocity.
+            Ca o companie finanțată din resurse proprii, credem în creșterea sustenabilă și
+            menținerea controlului deplin asupra viziunii produsului. Construim platformele
+            cu grijă, prioritizând nevoile utilizatorilor în fața scalării rapide.
+            Cu Midday, eficientizăm operațiunile de business, iar cu Languine,
+            construim infrastructură de localizare care ajută startup-urile rapide
+            să ajungă la audiențe globale fără a încetini ritmul de dezvoltare.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl mb-2">Open Source Commitment</h2>
+          <h2 className="text-xl mb-2">Angajamentul față de open-source</h2>
           <p className="text-[#878787] leading-relaxed text-sm">
-            We're deeply committed to open source principles. Both Midday and
-            Languine are being built in public, with transparency at their core.
-            We believe that collaboration with the community leads to better
-            products, and we're proud to contribute back to the open source
-            ecosystem. This commitment remains central to our mission, even as
-            we grow and evolve.
+            Suntem profund dedicați principiilor open-source. Atât Midday, cât și
+            Languine sunt construite în mod public, cu transparența în centru.
+            Credem că colaborarea cu comunitatea duce la produse mai bune și suntem
+            mândri să contribuim înapoi la ecosistemul open-source. Acest angajament
+            rămâne central pentru misiunea noastră, chiar și pe măsură ce creștem și evoluăm.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl mb-2">Follow Our Journey</h2>
+          <h2 className="text-xl mb-2">Urmărește-ne călătoria</h2>
           <p className="text-[#878787] leading-relaxed text-sm">
-            Follow{" "}
+            Urmărește {" "}
             <a
               href="https://x.com/pontusab"
               className="text-primary hover:underline"
             >
               @pontusab
             </a>{" "}
-            and{" "}
+            și {" "}
             <a
               href="https://x.com/viktorhofte"
               className="text-primary hover:underline"
             >
               @viktorhofte
             </a>{" "}
-            on X to stay updated with our latest developments on both Midday and
+            pe X pentru a rămâne la curent cu cele mai recente noutăți despre Midday și
             Languine.
           </p>
         </section>
@@ -87,7 +85,7 @@ export default function About() {
 
       <Image
         src="https://midday.ai/cdn-cgi/image/width=1920,quality=80//_next/static/media/founders.c6158766.png"
-        alt="Midday founders"
+        alt="Fondatorii Midday"
         width={1920}
         height={1080}
         className="rounded-lg mb-12 mt-12"

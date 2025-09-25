@@ -69,7 +69,7 @@ export function FollowButton({ slug, id }: Props) {
         variant={isFollowing ? "outline" : "default"}
         disabled={followAction.isExecuting}
       >
-        {isFollowing ? "Following" : "Follow"}
+        {isFollowing ? "Urmărești" : "Urmărește"}
       </Button>
       <SignInModal
         redirectTo={`/u/${slug}`}

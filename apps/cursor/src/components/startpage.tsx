@@ -8,23 +8,22 @@ import { BoardPost } from "./board/board-post";
 import { GlobalSearchInput } from "./global-search-input";
 import { HeroTitle } from "./hero-title";
 import { type Job, JobsFeatured } from "./jobs/jobs-featured";
-import MCPList from "./mcp-list";
-import type { MCP } from "./mcps/mcps-featured";
+import type { Company } from "./company/company-card";
+import { CompanyPillList } from "./company/company-pill-list";
 import { MembersCard } from "./members/members-card";
-import { RuleList } from "./rule-list";
 import { Cursor } from "./ui/cursor";
 
 export function Startpage({
   sections,
   jobs,
-  mcps,
+  companies,
   totalUsers,
   members,
   popularPosts,
 }: {
   sections: Section[];
   jobs?: Job[] | null;
-  mcps?: MCP[] | null;
+  companies?: Company[] | null;
   totalUsers: number;
   members: unknown[] | null;
   popularPosts: unknown[] | null;
@@ -59,7 +58,7 @@ export function Startpage({
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
           >
-            <MCPList data={mcps} />
+            <CompanyPillList data={companies} />
           </motion.div>
 
           {!search && (
@@ -70,12 +69,12 @@ export function Startpage({
               transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
             >
               <div className="flex justify-between items-center mb-4">
-                <h3 className="text-base font-regular">Featured jobs</h3>
+                <h3 className="text-base font-regular">Joburi recomandate</h3>
                 <Link
-                  href="/jobs"
+                  href="/"
                   className="text-sm text-[#878787] flex items-center gap-1"
                 >
-                  <span>View all</span>
+                  <span>Vezi toate</span>
                   <svg
                     width="12"
                     height="13"
@@ -104,33 +103,17 @@ export function Startpage({
               </div>
               <JobsFeatured data={jobs} hidePagination={true} />
 
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, ease: "easeOut", delay: 0.45 }}
-                className="mt-10"
-              >
-                <RuleList
-                  sections={[
-                    {
-                      ...sectionsPartOne,
-                      rules: sectionsPartOne.rules.slice(0, 14),
-                    },
-                  ]}
-                  small
-                  showViewAll
-                />
-              </motion.div>
+         
 
               <div className="flex justify-between items-center mb-4 mt-10">
                 <Link href="/members">
-                  <h3 className="text-base font-regular">Members</h3>
+                  <h3 className="text-base font-regular">Membri</h3>
                 </Link>
                 <Link
                   href="/members"
                   className="text-sm text-[#878787] flex items-center gap-1"
                 >
-                  <span>View all</span>
+                  <span>Vezi toate</span>
                   <svg
                     width="12"
                     height="13"
@@ -167,13 +150,13 @@ export function Startpage({
 
               <div className="flex justify-between items-center mb-4 mt-10">
                 <Link href="/board">
-                  <h3 className="text-base font-regular">Trending in Cursor</h3>
+                  <h3 className="text-base font-regular">În trend pe Cursor</h3>
                 </Link>
                 <Link
                   href="/board"
                   className="text-sm text-[#878787] flex items-center gap-1"
                 >
-                  <span>View all</span>
+                  <span>Vezi toate</span>
                   <svg
                     width="12"
                     height="13"
@@ -209,13 +192,7 @@ export function Startpage({
             </motion.div>
           )}
 
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: 0.45 }}
-          >
-            <RuleList sections={restSections} small showViewAll />
-          </motion.div>
+         
         </div>
       </div>
     </div>

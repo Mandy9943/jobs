@@ -111,7 +111,7 @@ export async function createJobListingCheckoutSession({
     customerExternalId: companyId,
     customerEmail: email,
     customerName,
-    successUrl: `${process.env.NEXT_PUBLIC_APP_URL}/jobs`,
+    successUrl: `${process.env.signInWithOAuth}/jobs`,
     metadata: {
       jobListingId,
       plan,

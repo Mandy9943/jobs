@@ -52,12 +52,12 @@ export function ProfileHeader({
         <div className="flex gap-6 mt-2">
           <Link href={`/u/${slug}/following`}>
             <span className="text-xs font-mono text-[#878787]">
-              {formatNumber(following_count)} Following
+              {formatNumber(following_count)} Urmăriți
             </span>
           </Link>
           <Link href={`/u/${slug}/followers`}>
             <span className="text-xs font-mono text-[#878787]">
-              {formatNumber(followers_count)} Followers
+              {formatNumber(followers_count)} Urmăritori
             </span>
           </Link>
         </div>

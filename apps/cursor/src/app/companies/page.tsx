@@ -5,8 +5,8 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 
 export const metadata: Metadata = {
-  title: "Companies using Cursor | Cursor Directory",
-  description: "A directory of companies that use Cursor.",
+  title: "Companii care folosesc Cursor | Cursor Directory",
+  description: "Un director de companii care folosesc Cursor.",
 };
 
 export const revalidate = 3600;
@@ -18,9 +18,9 @@ export default async function Page() {
     <div className="max-w-screen-xl mx-auto px-6 py-12 md:mt-24 pb-32">
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-xl mb-2">Browse Companies</h1>
+          <h1 className="text-xl mb-2">Răsfoiește companiile</h1>
           <p className="text-sm text-[#878787] mb-8">
-            Browse companies or add your company to the directory .
+            Răsfoiește companiile sau adaugă-ți compania în director.
           </p>
         </div>
 

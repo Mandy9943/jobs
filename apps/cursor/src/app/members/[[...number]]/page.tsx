@@ -7,9 +7,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Join the Cursor Community | Cursor Directory",
+  title: "Alătură-te comunității Cursor | Cursor Directory",
   description:
-    "Join the fastest growing community of Cursor developers around the world",
+    "Alătură-te celei mai rapide comunități de dezvoltatori Cursor din lume",
 };
 
 export const revalidate = 300;
@@ -37,10 +37,10 @@ export default async function Page({ params, searchParams }: Props) {
     <div className="max-w-screen-xl mx-auto px-6 py-12 md:mt-24 pb-32">
       <div className="flex justify-between items-center">
         <div>
-          <h1 className="text-xl mb-2">Browse Members</h1>
+          <h1 className="text-xl mb-2">Răsfoiește membrii</h1>
           <p className="text-sm text-[#878787] mb-8">
-            Join the Cursor community with{" "}
-            {formatNumber(totalUsers?.count ?? 0)} members.
+            Alătură-te comunității Cursor cu {" "}
+            {formatNumber(totalUsers?.count ?? 0)} membri.
           </p>
         </div>
 
@@ -50,13 +50,13 @@ export default async function Page({ params, searchParams }: Props) {
             variant="outline"
             className="border-border rounded-full"
           >
-            Join the community
+            Alătură-te comunității
           </Button>
         </Link>
       </div>
 
       <SearchInput
-        placeholder="Search members"
+        placeholder="Caută membri"
         className="border-l-0 border-r-0 border-t-0 border-b-[1px] border-border px-0 mb-8"
         shallow={false}
       />
@@ -66,7 +66,7 @@ export default async function Page({ params, searchParams }: Props) {
       <div className="flex justify-center mt-12">
         <Link href={`/members/${pageNumber + 1}`} className="w-full">
           <Button variant="outline" className="border-border w-full">
-            Load more
+            Încarcă mai multe
           </Button>
         </Link>
       </div>

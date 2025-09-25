@@ -5,9 +5,9 @@ import { getSession } from "@/utils/supabase/auth";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Create a new job listing | Cursor Directory",
+  title: "Creează un anunț de job | Cursor Directory",
   description:
-    "Create a new job listing on Cursor Directory and reach 300k+ developers today.",
+    "Creează un anunț de job pe Cursor Directory și ajungi astăzi la peste 300k de dezvoltatori.",
 };
 
 export default async function Page() {
@@ -18,8 +18,8 @@ export default async function Page() {
       <div className="min-h-screen flex items-center justify-center p-4 w-full max-w-sm mx-auto">
         <div className="max-w-md w-full text-center -mt-32">
           <p className="text-md mt-4">
-            Sign in to post a job listing <br />
-            and reach 300k+ developers today.
+            Conectează-te pentru a publica un anunț de job <br />
+            și a ajunge astăzi la peste 300k de dezvoltatori.
           </p>
 
           <div className="mt-10 flex flex-col gap-4">
@@ -35,7 +35,7 @@ export default async function Page() {
 
   return (
     <div className="mx-auto max-w-screen-sm xl:max-w-screen-sm border-t border-border pt-32 pb-16">
-      <h1 className="text-2xl mb-4">Create a new job listing</h1>
+  <h1 className="text-2xl mb-4">Creează un anunț de job</h1>
       <JobForm />
     </div>
   );

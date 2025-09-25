@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 
 export const metadata = {
-  title: "Advertise on Cursor Directory",
+  title: "Fă publicitate pe Cursor Directory",
   description:
-    "Reach over 120,000 developers monthly and showcase your product or service on Cursor Directory, the community-driven platform for Cursor AI rules and prompts.",
+    "Ajunge la peste 120.000 de dezvoltatori lunar și prezintă-ți produsul sau serviciul pe Cursor Directory, platforma comunității pentru reguli și prompturi Cursor AI.",
 };
 
 export default function Advertise() {
@@ -11,97 +11,90 @@ export default function Advertise() {
     <>
       <div className="flex flex-col items-center justify-center max-w-screen-md mx-auto px-6 py-12 pb-32">
         <h1 className="text-4xl mb-12 mt-20 text-center">
-          Advertise on <br />
+          Fă publicitate pe <br />
           Cursor Directory
         </h1>
 
         <div className="space-y-12 mt-10">
           <section>
-            <h2 className="text-xl mb-2">
-              Reach an Engaged Developer Audience
-            </h2>
+            <h2 className="text-xl mb-2">Ajunge la o audiență de dezvoltatori implicați</h2>
             <p className="text-[#878787] leading-relaxed text-sm">
-              Cursor Directory attracts over{" "}
+              Cursor Directory atrage peste {" "}
               <a
                 href="https://dashboard.openpanel.dev/share/overview/a5hhbY?range=6m"
                 className="text-primary border-border border-dashed border-b-[1px]"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                250,000 unique visitors monthly
+                250.000 de vizitatori unici lunar
               </a>{" "}
-              - and we're growing steadily. Our audience consists of developers,
-              engineering leaders, and technical decision-makers who are
-              actively seeking ways to improve their development workflow and
-              productivity.
+              — iar numărul este în creștere constantă. Audiența noastră este formată din dezvoltatori,
+              lideri tehnici și factori de decizie care caută activ modalități de a-și îmbunătăți fluxul de lucru
+              și productivitatea.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl mb-2">Why Advertise With Us</h2>
+            <h2 className="text-xl mb-2">De ce să faci publicitate la noi</h2>
             <p className="text-[#878787] leading-relaxed text-sm">
-              Our community is highly engaged with developer tools, AI
-              solutions, and productivity enhancers. If you're offering
-              developer tools, APIs, cloud services, or any tech product, our
-              platform provides direct access to your ideal audience. Our users
-              are early adopters who actively influence technology choices
-              within their organizations.
+              Comunitatea noastră este foarte implicată în instrumente pentru dezvoltatori, soluții AI
+              și îmbunătățitoare de productivitate. Dacă oferi instrumente pentru dezvoltatori, API-uri,
+              servicii cloud sau orice produs tech, platforma noastră îți oferă acces direct la audiența ideală.
+              Utilizatorii noștri sunt early adopters care influențează activ alegerile tehnologice
+              din organizațiile lor.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl mb-2">Our Audience</h2>
+            <h2 className="text-xl mb-2">Audiența noastră</h2>
             <p className="text-[#878787] leading-relaxed text-sm">
-              • Software Engineers & Developers (65%)
-              <br />• Technical Leaders & Engineering Managers (20%)
-              <br />• Startup Founders & CTOs (10%)
-              <br />• Other Technical Professionals (5%)
+              • Ingineri software și dezvoltatori (65%)
+              <br />• Lideri tehnici și Engineering Managers (20%)
+              <br />• Fondatori de startup și CTO (10%)
+              <br />• Alți profesioniști tehnici (5%)
               <br />
               <br />
-              Our visitors come from leading tech companies, innovative
-              startups, and development agencies worldwide, all united by their
-              interest in AI-enhanced development tools and workflow
-              optimization.
+              Vizitatorii noștri provin din companii tech de top, startup-uri inovatoare și agenții de dezvoltare din întreaga lume,
+              uniți de interesul pentru instrumente de dezvoltare îmbunătățite cu AI și optimizarea fluxului de lucru.
               <br />
               <br />
-              View our{" "}
+              Vezi {" "}
               <a
                 href="https://dashboard.openpanel.dev/share/overview/a5hhbY?range=30d"
                 className="text-primary border-border border-dashed border-b-[1px]"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                real-time analytics dashboard
+                dashboard-ul nostru de analytics în timp real
               </a>{" "}
-              for up-to-date visitor statistics.
+              pentru statistici actualizate ale vizitatorilor.
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl mb-2">Advertising Options</h2>
+            <h2 className="text-xl mb-2">Opțiuni de publicitate</h2>
             <p className="text-[#878787] leading-relaxed text-sm">
-              We offer various advertising opportunities including:
-              <br />• Featured listings in our directory
-              <br />• Sponsored content and tutorials
-              <br />• Newsletter sponsorships
-              <br />• Custom partnership opportunities
+              Oferim diverse oportunități de publicitate, inclusiv:
+              <br />• Listări evidențiate în director
+              <br />• Conținut sponsorizat și tutoriale
+              <br />• Sponsorizări în newsletter
+              <br />• Oportunități de parteneriat personalizate
               <br />
               <br />
-              Contact Pontus at{" "}
+              Contactează-l pe Pontus la {" "}
               <a
                 href="https://twitter.com/pontusab"
                 className="text-primary border-border border-dashed border-b-[1px]"
               >
                 @pontusab
               </a>{" "}
-              to discuss how we can help you reach our engaged developer
-              community.
+              pentru a discuta cum te putem ajuta să ajungi la comunitatea noastră de dezvoltatori implicați.
             </p>
 
             <p className="text-primary mt-8 text-sm w-full">
               <Button asChild className="w-full">
                 <a href="https://buy.polar.sh/polar_cl_XZNMJtIvsTBndqeeVF5Xf1CNMBzpb0N69IpOc0hhCpX">
-                  Buy ad slot
+                  Cumpără un spațiu publicitar
                 </a>
               </Button>
             </p>

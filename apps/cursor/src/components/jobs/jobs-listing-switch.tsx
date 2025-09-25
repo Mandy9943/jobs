@@ -22,13 +22,13 @@ export function JobListingSwitch({ id, active }: JobListingSwitchProps) {
       }),
       onSuccess: () => {
         if (optimisticState.active) {
-          toast.success("Job listing is now hidden");
+          toast.success("Anunțul de job este acum ascuns");
         } else {
-          toast.success("Job listing is now visible");
+          toast.success("Anunțul de job este acum vizibil");
         }
       },
       onError: () => {
-        toast.error("Failed to update job listing status");
+        toast.error("Actualizarea stării anunțului a eșuat");
       },
     },
   );
@@ -43,7 +43,7 @@ export function JobListingSwitch({ id, active }: JobListingSwitchProps) {
   return (
     <div className="flex items-center gap-2">
       <span className="text-xs font-mono text-[#878787]">
-        {optimisticState.active ? "Listing is visible" : "Listing is hidden"}
+        {optimisticState.active ? "Anunțul este vizibil" : "Anunțul este ascuns"}
       </span>
       <Switch
         checked={optimisticState.active}

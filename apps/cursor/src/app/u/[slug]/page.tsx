@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: { params: Params }) {
   const { data } = await getUserProfile(slug);
 
   return {
-    title: `${data?.name}'s Profile | Cursor Directory`,
+    title: `Profilul lui ${data?.name} | Cursor Directory`,
   };
 }
 

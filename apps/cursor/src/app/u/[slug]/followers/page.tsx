@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Params }) {
   const { data } = await getUserProfile(slug);
 
   return {
-    title: `${data?.name}'s Followers | Cursor Directory`,
+    title: `Urmăritorii lui ${data?.name} | Cursor Directory`,
   };
 }
 
@@ -31,7 +31,7 @@ export default async function Page({ params }: { params: Params }) {
   if (!data) {
     return (
       <div className="flex justify-center items-center -mt-28 w-full h-screen text-sm text-[#878787]">
-        User not found
+        Utilizatorul nu a fost găsit
       </div>
     );
   }
@@ -42,10 +42,10 @@ export default async function Page({ params }: { params: Params }) {
         <ProfileTop data={data} isOwner={false} />
 
         <div className="mt-10">
-          <h3 className="text-lg font-mono">Followers</h3>
+          <h3 className="text-lg font-mono">Urmăritori</h3>
           <div className="flex flex-col gap-2 mt-4">
             {followers?.length === 0 && (
-              <div className="text-sm text-[#878787]">No followers</div>
+              <div className="text-sm text-[#878787]">Niciun urmăritor</div>
             )}
             {followers?.map((user) => (
               <MembersCard

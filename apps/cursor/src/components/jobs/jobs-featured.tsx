@@ -46,7 +46,7 @@ export function JobsFeatured({
               variant="outline"
               className="rounded-full h-8 flex items-center gap-2 border-border"
             >
-              Add job listing
+              Adaugă un anunț de job
               <Plus className="size-4" />
             </Button>
           </Link>
@@ -103,7 +103,7 @@ export function JobsFeatured({
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    View
+                    Vezi
                   </a>
                 </Button>
               </CardContent>

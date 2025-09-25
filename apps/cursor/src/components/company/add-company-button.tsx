@@ -17,7 +17,7 @@ export function AddCompanyButton({ redirect }: { redirect?: boolean }) {
       className="border-border rounded-full"
       onClick={() => setAddCompany({ addCompany: true, redirect })}
     >
-      Add company
+      Adaugă companie
     </Button>
   );
 }

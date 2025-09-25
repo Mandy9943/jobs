@@ -27,25 +27,26 @@ import { z } from "zod";
 
 const formSchema = z.object({
   company_id: z.string({
-    required_error: "Please select a company.",
+    required_error: "Te rugăm să selectezi o companie.",
   }),
   title: z.string().min(2, {
-    message: "Title must be at least 2 characters.",
+    message: "Titlul trebuie să aibă cel puțin 2 caractere.",
   }),
   location: z.string().min(1, {
-    message: "Location is required.",
+    message: "Locația este obligatorie.",
   }),
   description: z
     .string()
     .min(10, {
-      message: "Description must be at least 10 characters.",
+      message: "Descrierea trebuie să aibă cel puțin 10 caractere.",
     })
     .max(500, {
-      message: "Description must be less than 500 characters.",
+      message: "Descrierea trebuie să aibă mai puțin de 500 de caractere.",
     }),
   link: z.string().url({
-    message: "Please enter a valid job posting URL.",
+    message: "Te rugăm să introduci un URL valid al anunțului.",
   }),
+  // Keep underlying values consistent with server action schema
   workplace: z.enum(["On site", "Remote", "Hybrid"]),
   experience: z.string().optional(),
   // Plan removed: all jobs are created as free "standard" by the server
@@ -62,7 +63,7 @@ export function JobForm() {
       location: "",
       description: "",
       link: "",
-      workplace: "On site",
+  workplace: "On site",
       experience: "",
       // Plan removed from client form; server defaults to "standard"
     },
@@ -89,7 +90,7 @@ export function JobForm() {
             name="company_id"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Company</FormLabel>
+                <FormLabel>Companie</FormLabel>
                 <FormControl>
                   <CompanySelect
                     value={field.value}
@@ -106,7 +107,7 @@ export function JobForm() {
             name="title"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Job listing title</FormLabel>
+                <FormLabel>Titlul anunțului</FormLabel>
                 <FormControl>
                   <Input
                     placeholder="Senior Software Engineer"
@@ -124,10 +125,10 @@ export function JobForm() {
             name="location"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Location</FormLabel>
+                <FormLabel>Locație</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="New York"
+                    placeholder="București"
                     {...field}
                     className="placeholder:text-[#878787] border-border"
                   />
@@ -143,20 +144,20 @@ export function JobForm() {
               name="workplace"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Workplace Type</FormLabel>
+                  <FormLabel>Tipul locului de muncă</FormLabel>
                   <Select
                     onValueChange={field.onChange}
                     defaultValue={field.value}
                   >
                     <FormControl>
                       <SelectTrigger className="border-border">
-                        <SelectValue placeholder="Select workplace type" />
+                        <SelectValue placeholder="Selectează tipul" />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
-                      <SelectItem value="On site">On site</SelectItem>
+                      <SelectItem value="On site">La birou</SelectItem>
                       <SelectItem value="Remote">Remote</SelectItem>
-                      <SelectItem value="Hybrid">Hybrid</SelectItem>
+                      <SelectItem value="Hybrid">Hibrid</SelectItem>
                     </SelectContent>
                   </Select>
                   <FormMessage />
@@ -169,7 +170,7 @@ export function JobForm() {
               name="experience"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Years of experience</FormLabel>
+                  <FormLabel>Ani de experiență</FormLabel>
                   <FormControl>
                     <Input
                       placeholder="4"
@@ -188,10 +189,10 @@ export function JobForm() {
             name="description"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Job listing description</FormLabel>
+                <FormLabel>Descrierea anunțului</FormLabel>
                 <FormControl>
                   <Textarea
-                    placeholder="Write a description of the role..."
+                    placeholder="Scrie o descriere a rolului..."
                     {...field}
                     className="placeholder:text-[#878787] border-border min-h-[100px]"
                   />
@@ -206,10 +207,10 @@ export function JobForm() {
             name="link"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Link to job page</FormLabel>
+                <FormLabel>Link către pagina jobului</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="https://your-company.com/careers/job-posting"
+                    placeholder="https://compania-ta.com/cariere/anunt"
                     {...field}
                     type="url"
                     className="placeholder:text-[#878787] border-border"
@@ -224,7 +225,7 @@ export function JobForm() {
         </div>
 
         <Button type="submit" className="w-full" disabled={isExecuting}>
-          {isExecuting ? "Saving..." : "Publish job"}
+          {isExecuting ? "Se salvează..." : "Publică jobul"}
         </Button>
       </form>
     </Form>

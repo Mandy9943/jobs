@@ -22,7 +22,7 @@ export function CompanyList({ data }: { data?: Company[] | null }) {
   return (
     <div className="mt-8">
       <SearchInput
-        placeholder="Search companies"
+        placeholder="Caută companii"
         className="border-l-0 border-r-0 border-t-0 border-b-[1px] border-border px-0"
       />
 
@@ -35,7 +35,7 @@ export function CompanyList({ data }: { data?: Company[] | null }) {
       ) : (
         <div className="mt-24 flex flex-col items-center">
           <div className="text-center text-sm text-[#878787]">
-            No companies found
+            Nicio companie găsită
           </div>
 
           <Button
@@ -43,7 +43,7 @@ export function CompanyList({ data }: { data?: Company[] | null }) {
             className="mt-4 rounded-full border-border"
             onClick={() => setSearch(null)}
           >
-            Clear search
+            Șterge căutarea
           </Button>
         </div>
       )}

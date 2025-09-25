@@ -8,13 +8,22 @@ import { CommandMenu } from "./command-menu";
 import { MobileMenu } from "./mobile-menu";
 import { UserMenu } from "./user-menu";
 
-const navigationLinks = [{ href: "/", label: "Jobs" }] as const;
+const navigationLinks = [
+  { href: "/jobs", label: "Joburi" },
+  { href: "/members", label: "Membri" },
+  { href: "/advertise", label: "Publicitate" },
+  { href: "/about", label: "Despre" },
+  { href: "/companies", label: "Companii" },
+] as const;
 
 export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
   const mainNavItems = navigationLinks;
+
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
     <div className="flex justify-between items-center mt-2 md:mt-0">
@@ -30,9 +39,7 @@ export function Header() {
               href={link.href}
               className={cn(
                 "flex items-center gap-2 text-sm font-medium",
-                pathname.includes(link.href)
-                  ? "text-primary"
-                  : "text-[#878787]",
+                isActive(link.href) ? "text-primary" : "text-[#878787]",
               )}
             >
               {link.label}

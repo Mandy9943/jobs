@@ -10,7 +10,13 @@ import { useEffect, useState } from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Button } from "./ui/button";
 
-const navigationLinks = [{ href: "/", label: "Jobs" }] as const;
+const navigationLinks = [
+  { href: "/jobs", label: "Joburi" },
+  { href: "/members", label: "Membri" },
+  { href: "/advertise", label: "Publicitate" },
+  { href: "/about", label: "Despre" },
+  { href: "/companies", label: "Companii" },
+] as const;
 
 type User = {
   id: string;
@@ -26,6 +32,14 @@ export function MobileMenu() {
   const supabase = createClient();
   const [user, setUser] = useState<User | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+
+  const isActive = (href: string) => {
+    // Treat Jobs as active on both "/" (root landing) and "/jobs" paths
+    if (href === "/jobs") {
+      return pathname === "/" || pathname.startsWith("/jobs");
+    }
+    return pathname.startsWith(href);
+  };
 
   useEffect(() => {
     async function getUser() {
@@ -118,9 +132,7 @@ export function MobileMenu() {
                     onClick={() => setIsOpen(false)}
                     className={cn(
                       "block py-5 text-sm font-medium",
-                      pathname === link.href
-                        ? "text-primary"
-                        : "text-[#878787]",
+                      isActive(link.href) ? "text-primary" : "text-[#878787]",
                     )}
                   >
                     {link.label}
@@ -147,7 +159,7 @@ export function MobileMenu() {
                         variant="outline"
                         className="h-8 rounded-full w-full mb-4 border-border"
                       >
-                        Profile
+                        Profil
                       </Button>
                     </Link>
                     <Button
@@ -155,7 +167,7 @@ export function MobileMenu() {
                       className="bg-white text-black h-8 rounded-full w-full"
                       onClick={handleSignOut}
                     >
-                      Sign Out
+                      Deconectare
                     </Button>
                   </>
                 ) : (
@@ -164,7 +176,7 @@ export function MobileMenu() {
                       variant="outline"
                       className="bg-white text-black h-8 rounded-full w-full"
                     >
-                      Sign In
+                      Conectare
                     </Button>
                   </Link>
                 )}

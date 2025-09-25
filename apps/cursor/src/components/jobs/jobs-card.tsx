@@ -98,7 +98,7 @@ export function JobsCard({
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                View
+                Vezi
               </a>
             </Button>
           </div>

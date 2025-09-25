@@ -32,7 +32,7 @@ export function CompanyCard({ company }: { company: Company }) {
           </div>
 
           <div className="ml-auto text-xs text-[#878787] font-mono">
-            View Company
+            Vezi compania
           </div>
         </CardHeader>
       </Link>

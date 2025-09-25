@@ -27,7 +27,7 @@ export function BoardPost({
   user_name,
   vote_count = 0,
   url,
-  created_at = "Just now",
+  created_at = "Chiar acum",
   user_slug,
 }: BoardPostProps) {
   return (
