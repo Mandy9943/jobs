@@ -1,9 +1,7 @@
-import { Button } from "@/components/ui/button";
-
 export const metadata = {
-  title: "Fă publicitate pe Cursor Directory",
+  title: "Fă publicitate pe PayLinks.ro",
   description:
-    "Ajunge la peste 120.000 de dezvoltatori lunar și prezintă-ți produsul sau serviciul pe Cursor Directory, platforma comunității pentru reguli și prompturi Cursor AI.",
+    "Ajunge la o audiență de freelanceri, antreprenori și business-uri în creștere pe PayLinks.ro. Promovează servicii, produse digitale și soluții financiare către o comunitate activă și orientată spre acțiune.",
 };
 
 export default function Advertise() {
@@ -12,91 +10,60 @@ export default function Advertise() {
       <div className="flex flex-col items-center justify-center max-w-screen-md mx-auto px-6 py-12 pb-32">
         <h1 className="text-4xl mb-12 mt-20 text-center">
           Fă publicitate pe <br />
-          Cursor Directory
+          PayLinks.ro
         </h1>
 
         <div className="space-y-12 mt-10">
           <section>
-            <h2 className="text-xl mb-2">Ajunge la o audiență de dezvoltatori implicați</h2>
+            <h2 className="text-xl mb-2">Ajunge la o audiență de freelanceri, antreprenori și business-uri în creștere</h2>
             <p className="text-[#878787] leading-relaxed text-sm">
-              Cursor Directory atrage peste {" "}
-              <a
-                href="https://dashboard.openpanel.dev/share/overview/a5hhbY?range=6m"
-                className="text-primary border-border border-dashed border-b-[1px]"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                250.000 de vizitatori unici lunar
-              </a>{" "}
-              — iar numărul este în creștere constantă. Audiența noastră este formată din dezvoltatori,
-              lideri tehnici și factori de decizie care caută activ modalități de a-și îmbunătăți fluxul de lucru
-              și productivitatea.
+              PayLinks.ro atrage zilnic utilizatori care caută soluții simple de plată, oportunități de venit și
+              instrumente digitale pentru a-și dezvolta afacerea. Audiența noastră este formată din freelanceri,
+              creatori de conținut, fondatori de startup, ONG-uri și profesioniști care iau decizii rapide și sunt
+              mereu în căutarea de resurse care le pot accelera creșterea.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl mb-2">De ce să faci publicitate la noi</h2>
             <p className="text-[#878787] leading-relaxed text-sm">
-              Comunitatea noastră este foarte implicată în instrumente pentru dezvoltatori, soluții AI
-              și îmbunătățitoare de productivitate. Dacă oferi instrumente pentru dezvoltatori, API-uri,
-              servicii cloud sau orice produs tech, platforma noastră îți oferă acces direct la audiența ideală.
-              Utilizatorii noștri sunt early adopters care influențează activ alegerile tehnologice
-              din organizațiile lor.
+              Comunitatea PayLinks este activă, implicată și orientată spre acțiune. Dacă oferi servicii, produse
+              digitale, soluții financiare, instrumente de marketing sau orice poate ajuta oamenii să câștige bani
+              mai ușor, platforma noastră îți oferă acces direct la publicul potrivit. Utilizatorii PayLinks sunt
+              early adopters care testează rapid și recomandă soluțiile care funcționează.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl mb-2">Audiența noastră</h2>
             <p className="text-[#878787] leading-relaxed text-sm">
-              • Ingineri software și dezvoltatori (65%)
-              <br />• Lideri tehnici și Engineering Managers (20%)
-              <br />• Fondatori de startup și CTO (10%)
-              <br />• Alți profesioniști tehnici (5%)
+              • Freelanceri și creatori independenți (45%)
+              <br />• Antreprenori și startup founders (25%)
+              <br />• ONG-uri și inițiative comunitare (15%)
+              <br />• Profesioniști din servicii, educație și wellness (15%)
               <br />
               <br />
-              Vizitatorii noștri provin din companii tech de top, startup-uri inovatoare și agenții de dezvoltare din întreaga lume,
-              uniți de interesul pentru instrumente de dezvoltare îmbunătățite cu AI și optimizarea fluxului de lucru.
-              <br />
-              <br />
-              Vezi {" "}
-              <a
-                href="https://dashboard.openpanel.dev/share/overview/a5hhbY?range=30d"
-                className="text-primary border-border border-dashed border-b-[1px]"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                dashboard-ul nostru de analytics în timp real
-              </a>{" "}
-              pentru statistici actualizate ale vizitatorilor.
+              Vizitatorii noștri provin din România și diaspora, dar și din ecosistemul global de freelancing și
+              business digital — toți uniți de dorința de a monetiza mai rapid și mai simplu.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl mb-2">Opțiuni de publicitate</h2>
             <p className="text-[#878787] leading-relaxed text-sm">
-              Oferim diverse oportunități de publicitate, inclusiv:
-              <br />• Listări evidențiate în director
-              <br />• Conținut sponsorizat și tutoriale
-              <br />• Sponsorizări în newsletter
-              <br />• Oportunități de parteneriat personalizate
-              <br />
-              <br />
-              Contactează-l pe Pontus la {" "}
-              <a
-                href="https://twitter.com/pontusab"
-                className="text-primary border-border border-dashed border-b-[1px]"
-              >
-                @pontusab
-              </a>{" "}
-              pentru a discuta cum te putem ajuta să ajungi la comunitatea noastră de dezvoltatori implicați.
+              Oferim diverse oportunități de promovare, inclusiv:
+              <br />• Listări evidențiate în directorul PayLinks Jobs
+              <br />• Conținut sponsorizat și articole educative
+              <br />• Sponsorizări în newsletter-ul PayLinks
+              <br />• Oportunități de parteneriat și campanii personalizate
             </p>
+          </section>
 
-            <p className="text-primary mt-8 text-sm w-full">
-              <Button asChild className="w-full">
-                <a href="https://buy.polar.sh/polar_cl_XZNMJtIvsTBndqeeVF5Xf1CNMBzpb0N69IpOc0hhCpX">
-                  Cumpără un spațiu publicitar
-                </a>
-              </Button>
+          <section>
+            <h2 className="text-xl mb-2">Contact</h2>
+            <p className="text-[#878787] leading-relaxed text-sm">
+              Scrie-ne la <a className="text-primary border-border border-dashed border-b-[1px]" href="mailto:salut@paylinks.ro">salut@paylinks.ro</a>
+              {" "}și hai să discutăm cum te putem ajuta să ajungi la comunitatea noastră de freelanceri și antreprenori implicați.
             </p>
           </section>
         </div>

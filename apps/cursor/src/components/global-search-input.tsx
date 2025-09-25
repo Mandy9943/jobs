@@ -3,7 +3,7 @@ import { useQueryState } from "nuqs";
 export function GlobalSearchInput() {
   const [search, setSearch] = useQueryState("q", { defaultValue: "" });
 
-  const placeholder = "Caută o regulă sau un server MCP...";
+  const placeholder = "Caută un job, un freelancer sau o companie...";
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

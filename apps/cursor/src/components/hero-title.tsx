@@ -4,7 +4,7 @@ import { formatNumber } from "@/utils/format";
 import Link from "next/link";
 
 export function HeroTitle({ totalUsers }: { totalUsers: number }) {
-  const text = `Alătură-te comunității Cursor cu peste ${formatNumber(totalUsers)} membri`;
+  const text = `Alătură-te comunității Paylinks Jobs cu peste ${formatNumber(totalUsers)} membri`;
 
   return (
     <div className="text-center mb-8">
@@ -27,20 +27,7 @@ export function HeroTitle({ totalUsers }: { totalUsers: number }) {
           animation: "fadeIn 0.2s ease forwards 0.1s",
         }}
       >
-        Locul pentru pasionații de Cursor unde poți explora și {" "}
-        <Link href="/generate" className="border-b border-border border-dashed">
-          genera
-        </Link>{" "}
-        reguli, răsfoi {" "}
-        <Link href="/mcp" className="border-b border-border border-dashed">
-          MCP-uri
-        </Link>
-        , a publica și urmări cele mai noi noutăți pe board, a învăța, a te conecta și a
-        descoperi {" "}
-  <Link href="/" className="border-b border-border border-dashed">
-          joburi
-        </Link>{" "}
-        — totul într-un singur loc.
+        Locul unde freelanceri, creatori și afaceri locale se conectează pentru colaborări reale și plăți rapide.
       </p>
       <style jsx>{`
         @keyframes fadeIn {

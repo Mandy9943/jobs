@@ -29,7 +29,7 @@ export function Header() {
     <div className="flex justify-between items-center mt-2 md:mt-0">
       <div className="md:fixed z-20 flex justify-between items-center top-0 px-6 py-2 w-full bg-background backdrop-filter backdrop-blur-sm bg-opacity-30">
         <Link href="/" className="font-medium font-mono text-sm">
-          cursor.directory
+          Paylinks Jobs
         </Link>
 
         <div className="hidden md:flex items-center gap-5">

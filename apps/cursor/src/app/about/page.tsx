@@ -1,8 +1,6 @@
-import Image from "next/image";
-
 export const metadata = {
-  title: "Despre Cursor Directory",
-  description: "De ce am construit Cursor Directory",
+  title: "Despre PayLinks Jobs",
+  description: "De ce am construit PayLinks Jobs",
 };
 
 export default function About() {
@@ -10,86 +8,50 @@ export default function About() {
     <div className="flex flex-col items-center justify-center max-w-screen-md mx-auto px-6 py-12">
       <h1 className="text-4xl mb-12 mt-20 text-center">
         De ce am construit <br />
-        Cursor Directory
+        PayLinks Jobs
       </h1>
 
       <div className="space-y-12 mt-10">
         <section>
           <p className="text-[#878787] leading-relaxed text-sm">
-            Călătoria noastră cu Cursor a fost transformatoare. Ca o echipă formată dintr-un
-            dezvoltator și un designer, am experimentat din prima mână cum Cursor
-            a accelerat semnificativ procesul nostru de dezvoltare. Acest plus de eficiență
-            ne-a oferit resursele să construim cele două startup-uri ale noastre,{" "}
-            <a
-              href="https://go.midday.ai/8cX3F4o"
-              className="text-primary border-border border-dashed border-b-[1px]"
-            >
-              Midday
-            </a>{" "}
-            și {" "}
-            <a
-              href="https://go.midday.ai/NnI1CUO"
-              className="text-primary border-border border-dashed border-b-[1px]"
-            >
-              Languine
-            </a>{" "}
-            cu o viteză incredibilă.
+            Am pornit PayLinks Jobs dintr-o nevoie simplă: oamenii au talent, dar nu mereu au acces
+            la oportunități. În România, mulți freelanceri, ONG-uri și mici afaceri se luptă să găsească
+            proiecte sau colaboratori potriviți, iar atunci când îi găsesc, plata este complicată și lentă.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl mb-2">Abordarea noastră</h2>
           <p className="text-[#878787] leading-relaxed text-sm">
-            Ca o companie finanțată din resurse proprii, credem în creșterea sustenabilă și
-            menținerea controlului deplin asupra viziunii produsului. Construim platformele
-            cu grijă, prioritizând nevoile utilizatorilor în fața scalării rapide.
-            Cu Midday, eficientizăm operațiunile de business, iar cu Languine,
-            construim infrastructură de localizare care ajută startup-urile rapide
-            să ajungă la audiențe globale fără a încetini ritmul de dezvoltare.
+            PayLinks schimbă asta. Cu un singur link de plată, oricine poate fi plătit în câteva secunde. Am
+            extins această idee și la joburi: vrem ca fiecare persoană cu o abilitate să aibă acces rapid la
+            clienți, proiecte și venituri.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl mb-2">Angajamentul față de open-source</h2>
+          <h2 className="text-xl mb-2">Construim PayLinks Jobs ca un loc unde:</h2>
+          <ul className="list-disc pl-6 text-[#878787] leading-relaxed text-sm space-y-2">
+            <li>Freelancerii își găsesc rapid clienți și sunt plătiți corect.</li>
+            <li>Startup-urile și business-urile mici descoperă oameni gata să livreze și să crească împreună.</li>
+            <li>ONG-urile și comunitățile pot conecta proiectele lor cu voluntari sau colaboratori dedicați.</li>
+            <li>Oricine are o idee sau un skill poate monetiza fără bariere.</li>
+          </ul>
+        </section>
+
+        <section>
           <p className="text-[#878787] leading-relaxed text-sm">
-            Suntem profund dedicați principiilor open-source. Atât Midday, cât și
-            Languine sunt construite în mod public, cu transparența în centru.
-            Credem că colaborarea cu comunitatea duce la produse mai bune și suntem
-            mândri să contribuim înapoi la ecosistemul open-source. Acest angajament
-            rămâne central pentru misiunea noastră, chiar și pe măsură ce creștem și evoluăm.
+            Pentru noi, nu e doar un director de joburi. Este o misiune: să ajutăm cât mai mulți români să câștige
+            un trai decent online, fără birocrație, fără pierdere de timp, fără complicații.
           </p>
         </section>
 
         <section>
-          <h2 className="text-xl mb-2">Urmărește-ne călătoria</h2>
           <p className="text-[#878787] leading-relaxed text-sm">
-            Urmărește {" "}
-            <a
-              href="https://x.com/pontusab"
-              className="text-primary hover:underline"
-            >
-              @pontusab
-            </a>{" "}
-            și {" "}
-            <a
-              href="https://x.com/viktorhofte"
-              className="text-primary hover:underline"
-            >
-              @viktorhofte
-            </a>{" "}
-            pe X pentru a rămâne la curent cu cele mai recente noutăți despre Midday și
-            Languine.
+            PayLinks Jobs este despre oportunitate, încredere și viteză. Dacă ai ceva de oferit, vrem ca lumea să te
+            poată găsi și să fii plătit imediat.
           </p>
         </section>
       </div>
-
-      <Image
-        src="https://midday.ai/cdn-cgi/image/width=1920,quality=80//_next/static/media/founders.c6158766.png"
-        alt="Fondatorii Midday"
-        width={1920}
-        height={1080}
-        className="rounded-lg mb-12 mt-12"
-      />
     </div>
   );
 }
