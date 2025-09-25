@@ -37,7 +37,7 @@ export function HeroTitle({ totalUsers }: { totalUsers: number }) {
         </Link>
         , post and follow the latest news on the board, learn, connect, and
         discover{" "}
-        <Link href="/jobs" className="border-b border-border border-dashed">
+  <Link href="/" className="border-b border-border border-dashed">
           jobs
         </Link>{" "}
         all in one place.

@@ -57,7 +57,7 @@ export const updateJobListingAction = authActionClient
         throw new Error(error.message);
       }
 
-      revalidatePath("/jobs");
+  revalidatePath("/");
       revalidatePath("/");
 
       return data;

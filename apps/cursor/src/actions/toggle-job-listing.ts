@@ -32,8 +32,8 @@ export const toggleJobListingAction = authActionClient
       throw new Error(error.message);
     }
 
-    revalidatePath(`/jobs/${data.slug}`);
-    revalidatePath("/jobs");
+  revalidatePath(`/${data.slug}`);
+  revalidatePath("/");
     revalidatePath("/");
 
     return data;

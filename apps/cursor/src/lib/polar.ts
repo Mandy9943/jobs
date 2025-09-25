@@ -179,8 +179,6 @@ export async function activateJobListing(
     .single();
 
   revalidatePath("/");
-  revalidatePath("/jobs");
-  revalidatePath(`/jobs/${jobListingId}`);
 
   return data;
 }

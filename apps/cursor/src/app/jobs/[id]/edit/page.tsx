@@ -41,7 +41,7 @@ export default async function Page({ params }: { params: Params }) {
   }
 
   if (job?.owner_id !== session.user.id) {
-    redirect("/jobs");
+  redirect("/");
   }
 
   return (

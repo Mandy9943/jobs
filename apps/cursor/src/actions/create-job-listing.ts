@@ -57,7 +57,7 @@ export const createJobListingAction = authActionClient
         throw new Error(error.message);
       }
 
-      // No payment required; redirect to jobs list
-      redirect("/jobs");
+  // No payment required; redirect to jobs list at root
+  redirect("/");
     },
   );
