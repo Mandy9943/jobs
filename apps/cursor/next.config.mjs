@@ -35,6 +35,9 @@ const nextConfig = {
       {
         hostname: "assets.serverless-extras.com",
       },
+      {
+        hostname:"oorbewwdnbkxwnrwijyy.supabase.co"
+      }
     ],
   },
 };

@@ -5,11 +5,11 @@ import { motion } from "motion/react";
 import Link from "next/link";
 import { useQueryState } from "nuqs";
 import { BoardPost } from "./board/board-post";
+import type { Company } from "./company/company-card";
+import { CompanyPillList } from "./company/company-pill-list";
 import { GlobalSearchInput } from "./global-search-input";
 import { HeroTitle } from "./hero-title";
 import { type Job, JobsFeatured } from "./jobs/jobs-featured";
-import type { Company } from "./company/company-card";
-import { CompanyPillList } from "./company/company-pill-list";
 import { MembersCard } from "./members/members-card";
 import { Cursor } from "./ui/cursor";
 

@@ -1,15 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Plus } from "lucide-react";
 import Link from "next/link";
-import * as React from "react";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 
 export type Job = {

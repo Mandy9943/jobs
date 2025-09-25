@@ -65,7 +65,7 @@ export const viewport = {
   maximumScale: 1,
   userScalable: false,
   themeColor: [
-    { media: "(prefers-color-scheme: light)" },
+    { media: "light" },
     // { media: "(prefers-color-scheme: dark)" },
   ],
 };
@@ -77,7 +77,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="ro"
       suppressHydrationWarning
       className={cn(
         `${GeistSans.variable} ${GeistMono.variable}`,
@@ -87,8 +87,8 @@ export default function RootLayout({
       <body>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="light"
+          
           disableTransitionOnChange
         >
           <NuqsAdapter>
