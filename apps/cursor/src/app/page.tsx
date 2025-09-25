@@ -1,8 +1,8 @@
 import { JobsFeatured } from "@/components/jobs/jobs-featured";
 import { JobsList } from "@/components/jobs/jobs-list";
 import { getFeaturedJobs } from "@/data/queries";
-import Link from "next/link";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Jobs | Cursor Directory",
