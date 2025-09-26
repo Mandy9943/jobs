@@ -21,14 +21,14 @@ export function JobsBuy() {
 
       <div className="relative z-10 text-white">
         <h1 className="text-3xl sm:text-4xl tracking-tight">
-          Reach 300k+ developers per <br />
-          month.
+          Ajungeți la 300k+ dezvoltatori în fiecare <br />
+          lună.
         </h1>
 
         <p className="text-sm text-[#878787] mt-4">
-          Connect with top talent and grow your team
-          <br /> faster by reaching a dedicated community of
-          <br /> developers.
+          Conectați-vă cu talentele de top și creșteți-vă echipa
+          <br /> mai repede ajungând la o comunitate dedicată de
+          <br /> dezvoltatori.
         </p>
 
         <Link href="/jobs/new">
@@ -36,7 +36,7 @@ export function JobsBuy() {
             className="font-mono mt-12 text-sm h-9 rounded-full border-white bg-transparent hover:bg-white hover:text-black transition-colors"
             variant="outline"
           >
-            Add job listing
+            Adăugați un anunț de job
           </Button>
         </Link>
       </div>
